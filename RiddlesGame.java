@@ -6,8 +6,8 @@ import javax.swing.*;
 represents question number that is currently running,Textarea for the question itself,Buttons for user 
 response,Labels for each possible answer and Timer that will countdown from 10 and if it reachs zero it
 skips to the next question).All wrong anwers will be colored RED and if timer reaches zero then also wrong 
-answers colored RED.When all questions are complete it will show you the results that how many of your 
-answers are correct.So in this code we have 1 constructor and 5 methods.I have defined these methods later*/
+answers colored RED and correct will be GREEN.When all questions are complete it will show you the results that how many of your 
+answers are correct.So in this code we have 1 constructor and 3 methods named nextQuestion(),displayAnswer() and results().I'll define these methods later in the code*/
 public class QUIZ implements ActionListener{
     String[] questions = {
                             "What can be seen once in a Minute,Twice in a Moment,And never in a Tousand Years?",
@@ -67,7 +67,7 @@ public class QUIZ implements ActionListener{
 	}
 	});
 	
-    public QUIZ() { //In constructor we set the layout of frame and all components and at last add all the components to frame and called the nextQuestion() method 
+    public QUIZ() { //In constructor we set the layout of frame and all components and at last add all the components to frame and called the nextQuestion() method. 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	frame.setSize(850,650);
 	frame.getContentPane().setBackground(new Color(50,50,50));

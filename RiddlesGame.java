@@ -285,3 +285,5 @@ public class QUIZ implements ActionListener{
     }
     
 }
+
+// Code by : https://youtu.be/wk1Fbqh7Tew
